@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About · Frames Shape Living</title>
+    <meta name="description" content="About Frames Shape Living — independent editorial on interior design, architecture, materials, and the art of living well. Our mission, team, and editorial values.">
+    <meta name="keywords" content="about, interior design journal, architecture editorial, design criticism, Elena Marchetti">
+    <link rel="canonical" href="https://www.framesshapeliving.com/about.html">
+    <!-- Open Graph -->
+    <meta property="og:title" content="About · Frames Shape Living">
+    <meta property="og:description" content="Independent editorial on interior design, architecture, and the art of living well.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1200&auto=format&fit=crop">
+    <meta property="og:url" content="https://www.framesshapeliving.com/about.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "About Frames Shape Living",
+      "url": "https://www.framesshapeliving.com/about.html",
+      "description": "Independent editorial on interior design, architecture, materials, and the art of living well.",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "Frames Shape Living",
+        "url": "https://www.framesshapeliving.com/",
+        "logo": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231f1f1f'/%3E%3Ctext x='50' y='68' font-family='Georgia' font-size='52' fill='%23d4c8b8' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E",
+        "founder": {
+          "@type": "Person",
+          "name": "Elena Marchetti"
+        }
+      }
+    }
+    </script>
+    <style>
+        /* RESET & BASE */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #faf9f7;
+            color: #1e1e1e;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* TYPOGRAPHY */
+        h1, h2, h3, h4, .serif {
+            font-family: 'Georgia', 'Times New Roman', Times, serif;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            line-height: 1.2;
+        }
+
+        h1 { font-size: 2.6rem; margin-bottom: 0.5rem; }
+        h2 { font-size: 1.9rem; margin-bottom: 0.75rem; }
+        h3 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+        h4 { font-size: 1.15rem; margin-bottom: 0.4rem; }
+        p { margin-bottom: 1.25rem; color: #2c2c2c; }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s, border-color 0.2s;
+        }
+
+        a:hover {
+            color: #8b6b4f;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+            border-radius: 2px;
+        }
+
+        /* LAYOUT */
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* HEADER */
+        .site-header {
+            border-bottom: 1px solid #e3ddd6;
+            padding: 20px 0 16px;
+            background-color: #faf9f7;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(4px);
+            background-color: rgba(250, 249, 247, 0.92);
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-family: 'Georgia', serif;
+            font-size: 1.9rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: #1e1e1e;
+        }
+
+        .logo span {
+            color: #8b6b4f;
+            font-style: italic;
+            font-weight: 400;
+        }
+
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+            gap: 28px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            font-weight: 500;
+            color: #3f3f3f;
+            flex-wrap: wrap;
+        }
+
+        .main-nav a {
+            padding-bottom: 4px;
+            border-bottom: 2px solid transparent;
+        }
+
+        .main-nav a:hover,
+        .main-nav a.active {
+            border-bottom-color: #8b6b4f;
+            color: #1e1e1e;
+        }
+
+        /* SEARCH BAR (simplified on about page) */
+        .search-wrap {
+            margin-top: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            border: 1px solid #d9d2c8;
+            border-radius: 40px;
+            padding: 8px 18px;
+            background: white;
+            width: 320px;
+            max-width: 100%;
+        }
+
+        .search-box input {
+            border: none;
+            outline: none;
+            font-size: 0.9rem;
+            width: 100%;
+            background: transparent;
+            font-family: inherit;
+            padding: 4px 0;
+        }
+
+        .search-box input::placeholder {
+            color: #9e948a;
+        }
+
+        .search-box button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #6b5e52;
+            font-size: 1.1rem;
+            padding: 0 0 0 8px;
+        }
+
+        .category-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            color: #5e554b;
+        }
+
+        .category-filters span {
+            cursor: pointer;
+            padding: 4px 12px;
+            border-radius: 30px;
+            border: 1px solid #e0d9d0;
+            background: white;
+            transition: all 0.15s;
+        }
+
+        .category-filters span:hover,
+        .category-filters span.active {
+            background: #1e1e1e;
+            color: #faf9f7;
+            border-color: #1e1e1e;
+        }
+
+        /* ABOUT PAGE SPECIFIC */
+        .about-hero {
+            margin: 44px 0 48px;
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 44px;
+            align-items: center;
+        }
+
+        .about-hero-content .eyebrow {
+            display: inline-block;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            font-weight: 600;
+            color: #8b6b4f;
+            margin-bottom: 12px;
+        }
+
+        .about-hero-content h1 {
+            font-size: 2.8rem;
+            line-height: 1.15;
+            margin-bottom: 16px;
+        }
+
+        .about-hero-content .lede {
+            font-size: 1.15rem;
+            color: #3d3d3d;
+            margin-bottom: 24px;
+            max-width: 90%;
+        }
+
+        .about-hero-image img {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+        }
+
+        .mission-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            margin: 60px 0 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e3ddd6;
+        }
+
+        .mission-card h3 {
+            font-size: 1.7rem;
+            margin-bottom: 18px;
+        }
+
+        .mission-card p {
+            font-size: 1.02rem;
+            color: #2e2e2e;
+        }
+
+        .values-section {
+            margin: 60px 0 50px;
+            background: #f5f2ed;
+            padding: 48px 40px;
+            border-radius: 2px;
+        }
+
+        .values-section h2 {
+            font-size: 2rem;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+
+        .value-item {
+            text-align: center;
+        }
+
+        .value-item .num {
+            font-family: 'Georgia', serif;
+            font-size: 2.4rem;
+            color: #8b6b4f;
+            opacity: 0.7;
+            margin-bottom: 8px;
+            font-style: italic;
+        }
+
+        .value-item h4 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .value-item p {
+            font-size: 0.95rem;
+            color: #3d3d3d;
+        }
+
+        .team-section {
+            margin: 60px 0 50px;
+        }
+
+        .team-section h2 {
+            font-size: 2rem;
+            margin-bottom: 28px;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-top: 20px;
+        }
+
+        .team-member {
+            text-align: left;
+        }
+
+        .team-member img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            margin-bottom: 18px;
+            filter: grayscale(15%);
+        }
+
+        .team-member h4 {
+            font-size: 1.3rem;
+            margin-bottom: 4px;
+        }
+
+        .team-member .role {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #8b6b4f;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .team-member p {
+            font-size: 0.92rem;
+            color: #3d3d3d;
+        }
+
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin: 50px 0 40px;
+            text-align: center;
+            border-top: 1px solid #e3ddd6;
+            border-bottom: 1px solid #e3ddd6;
+            padding: 40px 0;
+        }
+
+        .stat-item .stat-number {
+            font-family: 'Georgia', serif;
+            font-size: 2.4rem;
+            color: #1e1e1e;
+            margin-bottom: 6px;
+        }
+
+        .stat-item .stat-label {
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #7a6e63;
+        }
+
+        /* FAQ reuse from homepage (short version) */
+        .faq-section {
+            margin: 50px 0 40px;
+            background: #f5f2ed;
+            padding: 48px 40px;
+            border-radius: 2px;
+        }
+
+        .faq-section h2 {
+            font-size: 1.9rem;
+            margin-bottom: 28px;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #ddd6ce;
+            padding: 20px 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-family: 'Georgia', serif;
+            font-size: 1.15rem;
+            font-weight: 500;
+        }
+
+        .faq-question span {
+            font-size: 1.5rem;
+            color: #8b6b4f;
+            transition: transform 0.2s;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding-right: 30px;
+        }
+
+        .faq-answer p {
+            padding-top: 14px;
+            color: #3d3d3d;
+            margin-bottom: 0;
+        }
+
+        .faq-item.open .faq-answer {
+            max-height: 220px;
+        }
+
+        .faq-item.open .faq-question span {
+            transform: rotate(45deg);
+        }
+
+        /* INFO SECTIONS (same as homepage) */
+        .info-sections {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 28px;
+            margin: 60px 0 40px;
+            font-size: 0.85rem;
+        }
+
+        .info-sections h5 {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #6b5e52;
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+
+        .info-sections ul {
+            list-style: none;
+        }
+
+        .info-sections li {
+            margin-bottom: 10px;
+            color: #5a5a5a;
+            cursor: pointer;
+            transition: color 0.15s;
+        }
+
+        .info-sections li:hover {
+            color: #8b6b4f;
+        }
+
+        /* FOOTER */
+        .site-footer {
+            border-top: 1px solid #e3ddd6;
+            padding: 44px 0 36px;
+            margin-top: 20px;
+            font-size: 0.82rem;
+            color: #5f554b;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr 1fr 1fr;
+            gap: 36px;
+        }
+
+        .footer-logo {
+            font-family: 'Georgia', serif;
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #1e1e1e;
+            margin-bottom: 12px;
+        }
+
+        .footer-logo span {
+            color: #8b6b4f;
+            font-style: italic;
+            font-weight: 400;
+        }
+
+        .footer-grid p {
+            font-size: 0.82rem;
+            color: #5f554b;
+            max-width: 260px;
+        }
+
+        .footer-grid h6 {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #3f3f3f;
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+
+        .footer-grid ul {
+            list-style: none;
+        }
+
+        .footer-grid li {
+            margin-bottom: 9px;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+            padding-top: 22px;
+            border-top: 1px solid #e3ddd6;
+            font-size: 0.75rem;
+            color: #7a6e63;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 1024px) {
+            .about-hero {
+                grid-template-columns: 1fr;
+                gap: 28px;
+            }
+            .about-hero-content h1 {
+                font-size: 2.2rem;
+            }
+            .about-hero-image img {
+                height: 300px;
+            }
+            .mission-grid {
+                grid-template-columns: 1fr;
+                gap: 28px;
+            }
+            .values-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .team-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 30px;
+            }
+            .info-sections {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .stats-row {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+            }
+            .main-nav ul {
+                flex-wrap: wrap;
+                gap: 16px;
+            }
+            .about-hero-content h1 {
+                font-size: 1.9rem;
+            }
+            .values-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+            .faq-section {
+                padding: 28px 22px;
+            }
+            .info-sections {
+                grid-template-columns: 1fr 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 28px;
+            }
+            .search-box {
+                width: 100%;
+            }
+            .stats-row {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 16px;
+            }
+            .about-hero-content h1 {
+                font-size: 1.6rem;
+            }
+            .info-sections {
+                grid-template-columns: 1fr;
+            }
+            .stats-row {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            <div class="logo">Frames <span>Shape</span> Living</div>
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="terms.html">Terms Of Privacy</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="cookies.html">Cookies Policy</a></li>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="search-wrap">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search articles, topics, materials…" aria-label="Search articles">
+                <button id="searchBtn" aria-label="Search">⌕</button>
+            </div>
+            <div class="category-filters" id="categoryFilters">
+                <span class="active" data-category="all">All</span>
+                <span data-category="interior">Interior Design</span>
+                <span data-category="architecture">Architecture</span>
+                <span data-category="home">Home Design</span>
+                <span data-category="materials">Materials</span>
+                <span data-category="lighting">Lighting</span>
+                <span data-category="furniture">Furniture</span>
+                <span data-category="modern">Modern Homes</span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- ========== MAIN CONTENT ========== -->
+<main class="container">
+
+    <!-- ABOUT HERO -->
+    <section class="about-hero" aria-labelledby="about-heading">
+        <div class="about-hero-content">
+            <span class="eyebrow">About the Journal</span>
+            <h1 id="about-heading">We believe good design is a quiet, daily act of care.</h1>
+            <p class="lede">Frames Shape Living is an independent editorial platform exploring the spaces we inhabit — from the structural bones of a building to the texture of a door handle. We publish in-depth articles, critical perspectives, and practical guides for people who think deeply about the built environment.</p>
+            <div class="meta" style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em; color: #7a6e63; display: flex; gap: 20px;">
+                <span>Founded 2018</span>
+                <span>Independent · Reader-supported</span>
+            </div>
+        </div>
+        <div class="about-hero-image">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop" alt="Editorial workspace with architectural drawings, material samples, and a laptop showing a floor plan">
+        </div>
+    </section>
+
+    <!-- MISSION -->
+    <section class="mission-grid" aria-label="Our mission">
+        <div class="mission-card">
+            <h3>Why we exist</h3>
+            <p>Too much design media is either superficial or inaccessible. We wanted a publication that treats interiors and architecture with the same seriousness as art, literature, or film — without losing the warmth and practicality that makes a house a home. Every article is written for readers who want to understand not just <em>what</em> looks good, but <em>why</em> it works.</p>
+        </div>
+        <div class="mission-card">
+            <h3>How we work</h3>
+            <p>We are independent and reader-supported. We don’t accept sponsored content disguised as editorial. When we recommend a material, a designer, or a method, it’s because we’ve researched it, tested it, or spoken to people who have lived with it. Our archive spans hundreds of articles, from 800-word explainers to 4,000-word guides.</p>
+        </div>
+    </section>
+
+    <!-- VALUES -->
+    <section class="values-section" aria-labelledby="values-heading">
+        <h2 id="values-heading">What guides our editorial</h2>
+        <div class="values-grid">
+            <div class="value-item">
+                <div class="num">01</div>
+                <h4>Clarity over hype</h4>
+                <p>We avoid jargon and trend-chasing. If a concept is complex, we break it down. If a product is overrated, we say so.</p>
+            </div>
+            <div class="value-item">
+                <div class="num">02</div>
+                <h4>Longevity over novelty</h4>
+                <p>We champion design that ages well — materials that patina, layouts that adapt, and ideas that outlast a season.</p>
+            </div>
+            <div class="value-item">
+                <div class="num">03</div>
+                <h4>Honesty over access</h4>
+                <p>We publish critical perspectives, not just glossy tours. Our loyalty is to the reader, not to brands or PR firms.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM SECTION -->
+    <section class="team-section" aria-labelledby="team-heading">
+        <h2 id="team-heading">The people behind the pages</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=600&auto=format&fit=crop" alt="Portrait of Elena Marchetti, editor-in-chief">
+                <h4>Elena Marchetti</h4>
+                <div class="role">Editor-in-Chief</div>
+                <p>Former architect, design critic, and founder of Frames Shape Living. Elena writes about the intersection of built form and daily life, with a particular interest in housing, materials, and the ethics of space.</p>
+            </div>
+            <div class="team-member">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop" alt="Portrait of Marcus Chen, senior editor">
+                <h4>Marcus Chen</h4>
+                <div class="role">Senior Editor · Architecture</div>
+                <p>Marcus is a trained urban planner and longtime contributor. He leads our architecture coverage, with a focus on adaptive reuse, passive design, and the future of residential construction.</p>
+            </div>
+            <div class="team-member">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=600&auto=format&fit=crop" alt="Portrait of Amara Okafor, contributing editor">
+                <h4>Amara Okafor</h4>
+                <div class="role">Contributing Editor · Interiors</div>
+                <p>Amara is an interior designer and stylist. She writes our practical guides on lighting, color, and small-space planning, and curates our materials library.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS / NUMBERS -->
+    <div class="stats-row">
+        <div class="stat-item">
+            <div class="stat-number">380+</div>
+            <div class="stat-label">Articles published</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">7</div>
+            <div class="stat-label">Years of independent editorial</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">42k</div>
+            <div class="stat-label">Monthly readers</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">0</div>
+            <div class="stat-label">Sponsored posts</div>
+        </div>
+    </div>
+
+    <!-- SHORT FAQ -->
+    <section class="faq-section" aria-labelledby="faq-heading">
+        <h2 id="faq-heading">Common questions</h2>
+        <div class="faq-item">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                Is Frames Shape Living affiliated with any brands or manufacturers?
+                <span>+</span>
+            </div>
+            <div class="faq-answer">
+                <p>No. We are completely independent. We do not accept payment for coverage, and we do not publish sponsored articles. Our funding comes from reader donations and our occasional print anthology.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                Can I contribute an article or pitch a story?
+                <span>+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Yes — we welcome pitches from architects, designers, historians, and writers. Please see our contact page for submission guidelines. We pay for accepted work.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                Do you have a print edition?
+                <span>+</span>
+            </div>
+            <div class="faq-answer">
+                <p>We publish a limited-run print anthology once a year, collecting our best long-form essays and photography. Subscribe to our newsletter to be notified when the next edition is available.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- INFO / CONTACT / LEGAL SECTIONS (same as homepage) -->
+    <section class="info-sections" aria-label="Site information">
+        <div>
+            <h5>About</h5>
+            <ul>
+                <li>Our Mission</li>
+                <li>Editorial Team</li>
+                <li>Contributors</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div>
+            <h5>Legal</h5>
+            <ul>
+                <li>Privacy Policy</li>
+                <li>Terms of Use</li>
+                <li>Cookie Policy</li>
+                <li>Accessibility</li>
+            </ul>
+        </div>
+        <div>
+            <h5>Topics</h5>
+            <ul>
+                <li>Interior Design</li>
+                <li>Architecture</li>
+                <li>Materials</li>
+                <li>Lighting</li>
+            </ul>
+        </div>
+        <div>
+            <h5>Follow</h5>
+            <ul>
+                <li>Instagram</li>
+                <li>Pinterest</li>
+                <li>Newsletter</li>
+                <li>RSS</li>
+            </ul>
+        </div>
+    </section>
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-logo">Frames <span>Shape</span> Living</div>
+                <p>Independent editorial on interior design, architecture, and the art of living well. Published since 2018.</p>
+            </div>
+            <div>
+                <h6>Explore</h6>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Interior Design</a></li>
+                    <li><a href="#">Architecture</a></li>
+                    <li><a href="#">Materials</a></li>
+                </ul>
+            </div>
+            <div>
+                <h6>About</h6>
+                <ul>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="#">Editorial Guidelines</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Advertise</a></li>
+                </ul>
+            </div>
+            <div>
+                <h6>Legal</h6>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="cookies.html">Cookie Policy</a></li>
+                    <li><a href="#">Copyright</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2025 Frames Shape Living. All rights reserved.</span>
+            <span>Made for readers, not algorithms.</span>
+        </div>
+    </div>
+</footer>
+
+<!-- ========== JAVASCRIPT ========== -->
+<script>
+    // ----- FAQ ACCORDION (for about page) -----
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', function() {
+            const isOpen = item.classList.contains('open');
+            // Close all
+            faqItems.forEach(i => i.classList.remove('open'));
+            // Open current if it was closed
+            if (!isOpen) {
+                item.classList.add('open');
+            }
+        });
+        question.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                question.click();
+            }
+        });
+    });
+
+    // Open first FAQ by default for better UX
+    if (faqItems.length > 0) {
+        faqItems[0].classList.add('open');
+    }
+
+    // ----- SEARCH (demo only on about page) -----
+    const searchInput = document.getElementById('searchInput');
+    const searchBtn = document.getElementById('searchBtn');
+    if (searchBtn && searchInput) {
+        searchBtn.addEventListener('click', function() {
+            const query = searchInput.value.trim();
+            if (query) {
+                alert('Search is available on the home page. You searched for: ' + query);
+            }
+        });
+        searchInput.addEventListener('keyup', function(e) {
+            if (e.key === 'Enter') {
+                searchBtn.click();
+            }
+        });
+    }
+
+    // ----- CATEGORY FILTERS (demo only on about page) -----
+    const filterSpans = document.querySelectorAll('#categoryFilters span');
+    filterSpans.forEach(span => {
+        span.addEventListener('click', function() {
+            filterSpans.forEach(s => s.classList.remove('active'));
+            this.classList.add('active');
+            // On about page, just show a message or do nothing
+            // We'll keep it simple and not filter anything since there are no articles here
+        });
+    });
+</script>
+
+</body>
+</html>
